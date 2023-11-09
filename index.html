@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="sim card, wifi, mobile"/>
+    <title>chisom page</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+<link rel="manifest" href="./favicon/site.webmanifest">
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        h1 {color: blue; font-style: italic;}
+    </style>
+</head>
+<body>
+    <h1 style="color: red; font-size: 50px; text-align: center;">web development is fun</h1>
+    <h2>web development is fun</h2>
+    <h3>web development is fun</h3>
+    <h4>web development is fun</h4>
+    <h5 class="bold" id="italic">web development is fun</h5>
+    <h6 style="font-size: larger;">web development is fun</h6>
+    <p><code><i>first</i> coding <em>practice</em></code></p>
+     
+
+    <ul>
+        <li>Code</li>
+        <li>Website</li>
+        <li>Programming</li>
+        <li>Computer</li>
+    </ul>
+    <ol>
+        <li>Pen</li>
+        <li>Laptop</li>
+        <li>Tools</li>
+        <li>Dates</li>
+    </ol>
+    <!-- TABLES -->
+    <table>
+        <thead>
+            <tr>
+                <th>S/N</th>
+                <th>Name</th>                                  
+                <th>Email</th>                                  
+                <th>Class</th>                                  
+                                                 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>chisom</td>
+                <td>a@gmail.com</td>
+                <td>first</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>chisom</td>
+                <td>a@gmail.com</td>
+                <td>second</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>chisommmmmmmmmmmmmmmmmmmmmmmmmmm</td>
+                <td>a@gmail.com</td>
+                <td>third</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>chisom</td>
+                <td>a@gmail.com</td>
+                <td>fourth</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>S/N</th>
+                <th>Name</th>                                  
+                <th>Email</th>                                  
+                <th>Class</th>                                  
+                                                 
+            </tr>
+        </tfoot>
+    </table>
+    <!-- containers
+
+    semantic (clearly describes its meaning)                non-semantic
+
+    section                                                    div 
+    article
+    header
+    nav (links container)
+    aside (a comment that comes with the article)
+    main (defines the main content of a page) -->
+
+    <!-- Attributes: they provide additional information, thez are placed inside the opening tag. -->
+    <!-- anchor tag:  for navigation links.
+    href: (Hypertext refrence) destination of link.
+    target: defines where the link should open.
+    _parent, top, self; opens in the same tab as your tab.
+     _blank opens in a new tab  -->
+    
+
+     <a href="https://facebook.com" target="_blank"><h1>click me</h1></a>
+
+     <!-- image: src: tells where the image is located
+                 alt: a text that can be displayed instead of image, also for screen readers and bots.
+                 Paths: Absolute path and Relative path
+                 Absolute path: right click on image + copy path + paste on src. rep a path to a file
+                 Relative path: . + / + image. 
+     -->
+
+
+     <!-- <img src="C:\Users\User\Desktop\web design\chisom_web\344f874d-09fe-4419-a717-7846fac08a86.jpg" alt="Street at night"> -->
+     <img src="./images/344f874d-09fe-4419-a717-7846fac08a86.jpg" alt="Street at night">
+     <a href="./pages/about.html">about</a>
+     <a href="./pages/services.html">Services</a>
+     <a href="./pages/commercial/subscription.html">Subscription</a>
+     <a href="./pages/commercial/demo/product.html">Product</a>
+     <a href="./about.html">about</a>
+     
+
+
+    <!-- form: ( the main way to connnect backend and frontend) used when you want to collect information from your user.
+    action: where the form should be submitted to (usually to backend route) the default value is _self
+     eg: login, subscription, search, rating, comments etc
+    attributes of a form: action: where 
+                           method: how, default value is get  
+                           enctype: set to "multipart/form-data" to upload a file (default = text/plain) -->
+
+    <form action="mailto:obiefunamarcel@gmail.com" method="get" enctype="text/plain">
+        <label for="file">Upload your CV</label>
+        <input type="file" id="file">
+        <label for="name">Full name</label>
+        <input type="text" id="name" name="text">
+        <label for="color">Favorite color</label>
+        <input type="color" id="color">
+        <label for="amount">Amount</label>
+        <input type="number" id="amount">
+        <input type="email">
+        <input type="tel">
+        <input type="date">
+        <input type="range">
+        <input type="checkbox">
+        <input type="radio">
+        <input type="month">
+        <label for="message">Bio</label>
+        <textarea name="" id="message" cols="10" rows="3"></textarea>
+        <label for="country">Country</label>
+        <select name="" id="country">
+            <option value="+234">Nigeria</option>
+            <option value="">China</option>
+            <option value="">Canada</option>
+            <option value="">Finland</option>
+        </select>
+        <input type="submit" value="submit">
+    </form>
+
+    <!-- ASSIGNMENT 
+    
+       Write 20 attributes that can be used within a form-->
+
+       <!-- 1. action: where you want the information to go after the user submits.
+       2. method: how you want the information to be sent.
+       3. name: it is the name that the server uses to recieve the information.
+       4. value: what you want the information to be stored as.
+       5. for: tells what the information is about.
+       6. id: added in order to give a hint to the input.
+       7. type: the type of input
+       8. readonly: the value is not editable
+       9. autocomplete: gives the suggestions
+       10. placeholder: used to give a hint to the user
+       11. min: used for number inputs
+       12. max: maximum number input
+       13. minlength: minimum text input
+       14. maxlength: maximum text input
+       15. required: must be filled before submission can take place
+       16. step: how a number should change when the up and down buttons are press
+       17. cols: the columns of textarea
+       18. rows: the rows of text area
+       19. enctype: specifies if files should be uploaded or not
+       20. size: specifies how much of the value should be shown -->
+
+
+    <!-- <tagname attribute1="value" attribute2="value" attributen="value">content</tagname> -->
+    <!-- <div>The div element can be used with the class,
+         lang, and title attributes to mark up semantics 
+         common to a group of consecutive elements.
+    </div>
+    <table>The table element represents data with more
+         than one dimension, in the form of a table.
+    </table>
+    <a href="#">If the a element has an href attribute,
+         then it represents a hyperlink (a hypertext anchor) 
+         labeled by its contents.
+    </a>
+    <p>The p element represents a paragraph</p>
+    <span>The span element doesn't mean anything on its own, 
+        but can be useful when used together with the global attributes.
+    </span>
+    <img src="#" alt="#">
+    <video src="">A video element is used for playing videos 
+        or movies, and audio files with captions.
+    </video>
+    <ul>The ul element represents a list of items, </ul>
+    <ol>The ol element represents a list of items, 
+        where the items have been intentionally ordered
+    </ol>
+    <section>The section element represents a generic
+         section of a document or application.
+    </section>
+    <header>The header element represents introductory content</header>
+    <nav>The nav element represents a section of a page that links 
+        to other pages or to parts within the page: a section
+         with navigation links.
+    </nav>
+    <footer>A footer typically contains information about its section 
+        such as who wrote it, links to related documents, 
+        copyright data, and the like.
+    </footer>
+    <form action="#">The form element represents a collection 
+        of form-associated elements, some of which can represent
+         editable values that can be submitted to a server for processing.
+    </form>
+    <li>The li element represents a list item</li>
+    <br The br element represents a line break.>
+    <hr he hr element represents a paragraph-level thematic break,>
+    <strong>The strong element represents strong importance,
+         seriousness, or urgency for its contents.
+    </strong>
+    <button>he button element represents a button labeled by its contents.</button>
+    <input type="The input element represents a typed data field, 
+    usually with a form control to allow the user to edit the data."> -->
+
+
+    <!-- CSS 
+    inline: written with style attribute inside html tag.
+    internal: written inside a style tag in the head of html symtax: selector{property1: value;propertyn: value;} CSS RULE.
+    external: written inside a css file with extension .css
+    favicon-->
+
+</body>
+</html>
